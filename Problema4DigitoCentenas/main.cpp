@@ -41,7 +41,7 @@ int main()
     cout << "Please tell me a number" << endl;
     cin >> dNumberInput;
     dResult = int(((dNumberInput / 1000) - int(dNumberInput / 1000)) * 10);
-    cout << dResult << endl;
+    cout << sUserName << " Your hundred numer is: " << dResult << endl;
 
 
     return 0;
