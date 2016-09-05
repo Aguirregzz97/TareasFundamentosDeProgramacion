@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1473086511 source:c:\users\aguirre\documents\github\tareasfundamentosdeprogramacion\funcionesconcondiciones2\main.cpp
+	<iostream>
+	<sstream>
+	<string.h>
+

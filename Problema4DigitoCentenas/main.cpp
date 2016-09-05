@@ -31,7 +31,6 @@ using namespace std;
 
 int main()
 {
-
     double dNumberInput;
     double dResult;
     string sUserName;
