@@ -1,3 +1,5 @@
+// Andres Aguirre Gonzalez A01039656
+
 #include <iostream>
 
 using namespace std;
@@ -21,11 +23,15 @@ void CalculateKidCondition(int iMinWeight, int iMaxWeight, int iKidWeight)
 int main()
 {
     int iWeightInput;
-    int iMinimumWeight = 8;
-    int iMaximumWeight = 15;
+    int iMinimumWeight;
+    int iMaximumWeight;
 
     cout << "Please enter your kid Weight" << endl;
     cin >> iWeightInput;
+    cout << "Please enter the minimum weight" << endl;
+    cin >> iMinimumWeight;
+    cout << "Please enter the maximum weight" << endl;
+    cin >> iMaximumWeight;
     CalculateKidCondition(iMinimumWeight,iMaximumWeight,iWeightInput);
 
 

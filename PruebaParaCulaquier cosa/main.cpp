@@ -5,17 +5,11 @@ using namespace std;
 
 int main()
 {
-    string a;
-    string b;
-    string s;
+    int a;
+    int b;
 
-    a = "Pedro";
-    b = "Rodriguez";
-
-    s = a + b;
-
-    cout << s;
-
+    b = a * (1/2);
+    cout << b;
 
 
 

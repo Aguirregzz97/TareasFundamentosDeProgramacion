@@ -1,27 +1,17 @@
+// Andres Aguirre Gonzalez A01039656
+
 #include <iostream>
 #include <sstream>
 #include <string.h>
 
 using namespace std;
 
-// http://stackoverflow.com/questions/5590381/easiest-way-to-convert-int-to-string-in-c
-// http://stackoverflow.com/questions/12975341/to-string-is-not-a-member-of-std-says-g
-namespace patch
-{
-    template < typename T > std::string to_string( const T& n )
-    {
-        std::ostringstream stm ;
-        stm << n ;
-        return stm.str() ;
-    }
-}
 
 void CalcularHoraFormal(int iHoras, int iMinutos)
 {
-    string iHorasM;
-    string iMinutosM;
+
     string sTime;
-    string sFinalHour;
+
 
     if(iHoras < 12 && iHoras >= 0)
     {
@@ -34,23 +24,15 @@ void CalcularHoraFormal(int iHoras, int iMinutos)
     }
     if(iHoras < 10)
     {
-        iHorasM = "0" + patch::to_string(iHoras);
+        cout << "0";
     }
-    else
-    {
-        iHorasM = iHoras;
 
-    }
-    if(iMinutos < 10)
+    cout << iHoras << ":";
+     if(iMinutos < 10)
     {
-        iMinutosM = "0" + patch::to_string(iMinutos);
+        cout << "0";
     }
-    else
-    {
-        iMinutosM = iMinutos;
-
-    }
-    cout << "Son las " << iHorasM << ":" << iMinutosM << sTime;
+    cout << iMinutos<< sTime;
 
 }
 
